@@ -1,6 +1,6 @@
 # Magic Quadrant
 
-[Magic Quadrant](https://github.com/dogantech/magic-quadrant-project) is a scatter chart develop by Gartner to visualize major players in a specific market.\
+[Magic Quadrant](https://github.com/dogantech/magic-quadrant-project) is a scatter chart develop by Gartner to visualize major players in a specific market.
 
 You can reach demo from [here](http://eduteknoloji.com.tr/time-localyzer/).
 
