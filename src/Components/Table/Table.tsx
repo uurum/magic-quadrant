@@ -42,7 +42,7 @@ const Table = () => {
     setPoints(
       points.map((p) => {
         if (p === point) {
-          return { ...point, vision: +value }
+          return { ...point, y: +value }
         }
         return p
       }),
@@ -60,7 +60,7 @@ const Table = () => {
     setPoints(
       points.map((p) => {
         if (p === point) {
-          return { ...point, ability: +value }
+          return { ...point, x: +value }
         }
         return p
       }),
@@ -98,7 +98,7 @@ const Table = () => {
           <div>
             <input
               type="number"
-              value={point.vision}
+              value={point.y}
               onChange={(e) => updateVision(e.target.value, point)}
             />
             <span className="err" hidden={visionError === ''}>
@@ -108,7 +108,7 @@ const Table = () => {
           <div>
             <input
               type="number"
-              value={point.ability}
+              value={point.x}
               onChange={(e) => updateAbility(e.target.value, point)}
             />
             <span className="err" hidden={abilityError === ''}>

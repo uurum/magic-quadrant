@@ -3,7 +3,7 @@ import PointContext from '../../Context/PointContext'
 import Chart from './Chart'
 
 test('User can see error messages and user can insert Point', async () => {
-  const points = [{ label: 'Jack', ability: 25, vision: 50 }]
+  const points = [{ label: 'Jack', x: 25, y: 50 }]
   render(
     <PointContext.Provider value={{ points, setPoints: (data) => {} }}>
       <Chart />,

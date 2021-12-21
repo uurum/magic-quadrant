@@ -37,8 +37,8 @@ const Point: React.FC<IProps> = ({ point, chartSettings, pointUpdated }) => {
     }
 
     if (ref.current) {
-      ref.current.style.left = point.ability * ((maxW - ref.current.offsetWidth) / 100) + 'px'
-      ref.current.style.bottom = point.vision * ((maxY - ref.current.offsetWidth) / 100)  + 'px'
+      ref.current.style.left = point.x * ((maxW - ref.current.offsetWidth) / 100) + 'px'
+      ref.current.style.bottom = point.y * ((maxY - ref.current.offsetWidth) / 100)  + 'px'
     }
   }, [point])
 
@@ -77,14 +77,14 @@ const Point: React.FC<IProps> = ({ point, chartSettings, pointUpdated }) => {
   }
 
   const updatePoint = (
-    ability: number,
-    vision: number,
+    x: number,
+    y: number,
     maxW: number,
     maxY: number,
   ) => {
     const p: PointModel = {
-      ability: Math.round(ability / (maxW / 100)),
-      vision: Math.round(vision / (maxY / 100)),
+      x: Math.round(x / (maxW / 100)),
+      y: Math.round(y / (maxY / 100)),
       label: point.label,
     }
 

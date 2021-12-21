@@ -27,3 +27,10 @@
 .tbl {
   flex: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
