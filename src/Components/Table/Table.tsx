@@ -7,7 +7,6 @@ import './Table.css'
 const Table = () => {
 
   const { points, setPoints } = useContext(PointContext);
-
   const [visionError, setVisionError] = useState('')
   const [abilityError, setAbilityError] = useState('')
 
@@ -101,9 +100,6 @@ const Table = () => {
               value={point.y}
               onChange={(e) => updateVision(e.target.value, point)}
             />
-            <span className="err" hidden={visionError === ''}>
-              {visionError}
-            </span>
           </div>
           <div>
             <input
@@ -111,9 +107,6 @@ const Table = () => {
               value={point.x}
               onChange={(e) => updateAbility(e.target.value, point)}
             />
-            <span className="err" hidden={abilityError === ''}>
-              {abilityError}
-            </span>
           </div>
           <div>
             <button onClick={() => deletePoint(point)}>Delete</button>

@@ -28,10 +28,18 @@
 
 .y-label {
   position: absolute;
-  left: -30px;
+  left: -15px;
   bottom: 10px;
   white-space: nowrap;
-  writing-mode: sideways-lr;
+  -moz-transform: rotate(270deg);
+  -moz-transform-origin: bottom left;
+  -webkit-transform: rotate(270deg);
+  -webkit-transform-origin: bottom left;
+  -o-transform: rotate(270deg);
+  -o-transform-origin: bottom left;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 
 .y-label:after,
@@ -45,13 +53,10 @@
   right: -40px;
   top: 2px;
   transform: rotate(180deg);
-
 }
 
 .y-label:after {
-  top: -25px;
-  left: -7px;
-  transform: rotate(90deg);
+  top: 5px;
 }
 
 .x-label {

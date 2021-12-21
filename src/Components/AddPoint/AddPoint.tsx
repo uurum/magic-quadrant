@@ -35,21 +35,21 @@ const AddPoint: React.FC<Props> = ({ addPoint }) => {
           <input
             type="number"
             placeholder="Vision"
-            {...register('vision', { required: true, min: 0, max: 99 })}
+            {...register('y', { required: true, min: 0, max: 99 })}
           />
-          {errors.vision && errors.vision.type === 'required' && <span>Required!</span>}
-          {errors.vision && errors.vision.type === 'min' && <span>Min 0</span>}
-          {errors.vision && errors.vision.type === 'max' && <span>Max 100</span>}
+          {errors.y && errors.y.type === 'required' && <span>Required!</span>}
+          {errors.y && errors.y.type === 'min' && <span>Min 0</span>}
+          {errors.y && errors.y.type === 'max' && <span>Max 100</span>}
         </div>
         <div className='form-input'>
           <input
             type="number"
             placeholder="Ability"
-            {...register('ability', { required: true, min: 0, max: 99 })}
+            {...register('x', { required: true, min: 0, max: 99 })}
           />
-          {errors.ability && errors.ability.type === 'required' && <span>Required!</span>}
-          {errors.ability && errors.ability.type === 'min' && <span>Min 0</span>}
-          {errors.ability && errors.ability.type === 'max' && <span data-testid="ability-err">Max 100</span>}
+          {errors.x && errors.x.type === 'required' && <span>Required!</span>}
+          {errors.x && errors.x.type === 'min' && <span>Min 0</span>}
+          {errors.x && errors.x.type === 'max' && <span>Max 100</span>}
         </div>
         <div>
           <input type="submit" value="Add" />{' '}
