@@ -1,0 +1,54 @@
+.tbl-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.tbl-row > * {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.tbl-row > *:first-child {
+  flex: 2;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #ddd;
+  padding: 5px;
+  color: #4d4d4d;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 15px;
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  background: var(--LIGHT_GREY);
+}
+
+button:hover {
+  background: #696969;
+}
+
+.tbl-row div {
+  line-height: 28px;
+}
+
+.tbl-row.tbl-header > * {
+  background: var(--LIGHT_BLUE);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--WHITE);
+  text-indent: 5px;
+}
+
+.err {
+  font-size: 14px;
+  line-height: 20px;
+  color: #f43f3f;
+}

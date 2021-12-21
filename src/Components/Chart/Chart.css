@@ -1,0 +1,93 @@
+.chart {
+  height: 400px;
+  position: relative;
+  border: 2px solid var(--DARK_GREY);
+  margin-right: 20px;
+  flex-basis: 400px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.chart::before,
+.chart::after {
+  content: '';
+  background-color: var(--LIGHT_GREY);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  top: calc(50% - 1px);
+}
+
+.chart:after {
+  height: 100%;
+  width: 2px;
+  left: calc(50% - 1px);
+  top: 0;
+}
+
+.y-label {
+  position: absolute;
+  left: -30px;
+  bottom: 10px;
+  white-space: nowrap;
+  writing-mode: sideways-lr;
+}
+
+.y-label:after,
+.x-label:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 17px;
+  background: url(../../Assets/Images/right-arrow.svg) no-repeat;
+  position: absolute;
+  right: -40px;
+  top: 2px;
+  transform: rotate(180deg);
+
+}
+
+.y-label:after {
+  top: -25px;
+  left: -7px;
+  transform: rotate(90deg);
+}
+
+.x-label {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+}
+
+.lbl {
+  position: absolute;
+  width: 100px;
+  background: var(--LIGHT_BLUE);
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--WHITE);
+}
+
+.lbl-top-left {
+  top: 5px;
+  left: calc(25% - 50px);
+}
+
+.lbl-top-right {
+  top: 5px;
+  left: calc(75% - 50px);
+}
+
+.lbl-bottom-left {
+  bottom: 5px;
+  left: calc(25% - 50px);
+}
+
+.lbl-bottom-right {
+  bottom: 5px;
+  left: calc(75% - 50px);
+}

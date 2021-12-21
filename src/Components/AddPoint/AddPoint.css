@@ -1,0 +1,21 @@
+input {
+  width: 100%;
+}
+
+input[type='submit'] {
+  padding: 5px 15px;
+  border: 1px solid var(--DARK_GREY);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--LIGHT_GREY);
+}
+
+input[type='submit']:hover {
+  background: var(--DARK_GREY);
+}
+
+.form-input span {
+	font-size: 14px;
+	line-height: 20px;
+	color: #f43f3f;
+}

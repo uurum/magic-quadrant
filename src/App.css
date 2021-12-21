@@ -1,0 +1,29 @@
+:root {
+  --DARK_GREY: #696969;
+  --LIGHT_GREY: #e3e4e7;
+  --LIGHT_BLUE: #adb9c3;
+  --DARK_BLUE: #3878a2;
+  --WHITE: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  min-width: none;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tbl {
+  flex: 1;
+}
